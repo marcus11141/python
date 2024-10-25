@@ -1,6 +1,21 @@
-num = int(input("請輸入數字:"))
-sum = 0
-for i in range(num + 1):
-    sum = sum + i
+import turtle as t
+import time
 
-print(f"到{num}的總和是{sum}")
+t.speed(0)
+while True:
+    for j in range(60):
+        for i in range(1, 13):
+            t.penup()
+            t.forward(100)
+            t.stamp()
+            t.backward(100)
+            t.right(30)
+
+        print(6 * j)
+        t.right(6 * j)
+        t.pendown()
+        t.forward(90)
+        t.backward(90)
+        time.sleep(1)
+        t.clear()
+        t.left(6 * j)
