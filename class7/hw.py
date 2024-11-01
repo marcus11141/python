@@ -27,3 +27,19 @@ EX:
   *  
   * 
 """
+
+num = int(input("請輸入正整數:"))
+i = 1
+while i <= num:
+    if i % 3 == 0 or i % 7 == 0:
+        print(i)
+    i += 1
+
+arrow_size = int(input("請輸入要印出的箭頭大小: "))
+for i in range(arrow_size):
+    spaces = " " * (arrow_size - i - 1)
+    stars = "*" * (2 * i + 1)
+    print(spaces + stars)
+for i in range(arrow_size):
+    spaces = " " * (arrow_size - 1)
+    print(spaces + "*")
