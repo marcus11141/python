@@ -1,4 +1,4 @@
-prime = int(input("請輸入數字: "))
+prime = int(input("請輸入: "))
 for i in range(2, prime):
     if prime % i == 0:
         print(f"{prime}不是質數，因為{i}整除{prime}")
