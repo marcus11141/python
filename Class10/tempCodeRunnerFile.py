@@ -1,13 +1,18 @@
-import random as r
+import random
 
-num = r.randint(1, 100)
-
-while True:
-    num2 = int(input("請輸入1~100:"))
-    if num2 > num:
+start = 0
+end = 100
+m = random.randrange(1, 101)
+num = 0
+while num != m:
+    num = int(input(f"請輸入{start}~{end}數字:"))
+    if num < m:
         print("再大一點")
-    elif num2 < num:
+        if num > start:
+            start = num
+    elif num > m:
         print("再小一點")
-    else:
-        print("猜到了!")
-        break
+        if num < end:
+            end = num
+
+print("猜到了!")
