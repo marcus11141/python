@@ -9,7 +9,7 @@ while True:
     if choice == "1":
         key = input("請輸入科目名稱: ")
         value = int(input("請輸入成績: "))
-        D({key: value})
+        D[{key}:{value}]
     elif choice == "2":
         key = input("請輸入科目名稱: ")
         D.pop(key)
