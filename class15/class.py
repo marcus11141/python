@@ -43,3 +43,10 @@ def share_toy():
     global toy_name  # 告訴Pythoon我要使用大家的玩具
     toy_name = "積木"  # 修改全班共用的玩具
     print(f"大家憶起玩{toy_name}")
+
+
+# 讓我們來看看玩具的變化
+print(f"一開始教室的玩具是{toy_name}")
+play_with_toy()
+print(f"下課後教室的玩具是{toy_name}")
+share_toy()
